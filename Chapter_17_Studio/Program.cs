@@ -10,7 +10,7 @@ namespace Chapter_17_Studio
             Console.WriteLine("Enter the radius of a circle: ");
             string input = Console.ReadLine();
             double r;
-            while (!Double.TryParse(input, out r) || r <= 0)
+            while (!Double.TryParse(input, out r) || r <= 0) // validate entered value is numerican and greater than 0
             {
                 Console.WriteLine("Please enter a number for the radius of a circle that is greater than 0: ");
                 input = Console.ReadLine();
@@ -24,7 +24,7 @@ namespace Chapter_17_Studio
             Console.WriteLine("How many miles per gallon does your car get?");
             string inputMPG = Console.ReadLine();
             double mpg;
-            while (!Double.TryParse(inputMPG, out mpg) || mpg <= 0)
+            while (!Double.TryParse(inputMPG, out mpg) || mpg <= 0) // validate entered value is numerican and greater than 0
             {
                 Console.WriteLine("Please enter a numerical value for MPG above 0: ");
                 inputMPG = Console.ReadLine();
